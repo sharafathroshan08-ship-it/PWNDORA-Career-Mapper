@@ -1,0 +1,422 @@
+[
+  {
+    "domain": "Web Security",
+    "skill": "SQL Injection",
+    "tools": ["Burp Suite", "sqlmap"],
+    "certificate_alignment": ["eJPT", "OSWE", "PenTest+"],
+    "lab_category": "Web-Injection",
+    "difficulty": "Beginner",
+    "estimated_hours": 6,
+    "priority_level": "High"
+  },
+  {
+    "domain": "Web Security",
+    "skill": "Cross-Site Scripting (XSS)",
+    "tools": ["Burp Suite", "ZAP"],
+    "certificate_alignment": ["eJPT"],
+    "lab_category": "Web-Injection",
+    "difficulty": "Beginner",
+    "estimated_hours": 4,
+    "priority_level": "High"
+  },
+  {
+    "domain": "Web Security",
+    "skill": "Auth & Session Attacks",
+    "tools": ["Burp Suite"],
+    "certificate_alignment": ["OSWE"],
+    "lab_category": "Web-AuthN",
+    "difficulty": "Intermediate",
+    "estimated_hours": 8,
+    "priority_level": "High"
+  },
+  {
+    "domain": "Web Security",
+    "skill": "API Security (REST/GraphQL)",
+    "tools": ["Postman", "Burp Suite"],
+    "certificate_alignment": ["OSWE"],
+    "lab_category": "Web-API",
+    "difficulty": "Intermediate",
+    "estimated_hours": 6,
+    "priority_level": "Medium"
+  },
+  {
+    "domain": "Web Security",
+    "skill": "SSRF / File Inclusion",
+    "tools": ["Burp Suite"],
+    "certificate_alignment": ["OSWE", "OSCP"],
+    "lab_category": "Web-SSRF",
+    "difficulty": "Intermediate",
+    "estimated_hours": 5,
+    "priority_level": "Medium"
+  },
+  {
+    "domain": "Web Security",
+    "skill": "Web Recon & Enumeration",
+    "tools": ["Nmap", "gobuster"],
+    "certificate_alignment": ["eJPT"],
+    "lab_category": "Web-Recon",
+    "difficulty": "Beginner",
+    "estimated_hours": 3,
+    "priority_level": "High"
+  },
+  {
+    "domain": "Web Security",
+    "skill": "OWASP Top 10 Fundamentals",
+    "tools": ["ZAP"],
+    "certificate_alignment": ["Security+", "PenTest+"],
+    "lab_category": "Web-Fundamentals",
+    "difficulty": "Beginner",
+    "estimated_hours": 5,
+    "priority_level": "High"
+  },
+  {
+  "domain": "Network Security",
+  "skill": "TCP/IP & Protocol Analysis",
+  "tools": ["Wireshark"],
+  "certificate_alignment": ["Network+"],
+  "lab_category": "Net-Fundamentals",
+  "difficulty": "Beginner",
+  "estimated_hours": 6,
+  "priority_level": "High"
+},
+{
+  "domain": "Network Security",
+  "skill": "Port & Service Enumeration",
+  "tools": ["Nmap"],
+  "certificate_alignment": ["PenTest+"],
+  "lab_category": "Net-Recon",
+  "difficulty": "Beginner",
+  "estimated_hours": 4,
+  "priority_level": "High"
+},
+{
+  "domain": "Network Security",
+  "skill": "Firewall / IDS-IPS Evasion",
+  "tools": ["Nmap", "Metasploit"],
+  "certificate_alignment": ["OSCP"],
+  "lab_category": "Net-Evasion",
+  "difficulty": "Advanced",
+  "estimated_hours": 8,
+  "priority_level": "Medium"
+},
+{
+  "domain": "Network Security",
+  "skill": "VPN & Segmentation Concepts",
+  "tools": [],
+  "certificate_alignment": ["Network+", "Security+"],
+  "lab_category": "Net-Fundamentals",
+  "difficulty": "Intermediate",
+  "estimated_hours": 4,
+  "priority_level": "Low"
+},
+{
+  "domain": "Network Security",
+  "skill": "Wireless Security",
+  "tools": ["Aircrack-ng"],
+  "certificate_alignment": ["PenTest+"],
+  "lab_category": "Net-Wireless",
+  "difficulty": "Intermediate",
+  "estimated_hours": 6,
+  "priority_level": "Medium"
+},
+{
+  "domain": "Network Security",
+  "skill": "Network Exploitation",
+  "tools": ["Metasploit"],
+  "certificate_alignment": ["OSCP"],
+  "lab_category": "Net-Exploitation",
+  "difficulty": "Advanced",
+  "estimated_hours": 10,
+  "priority_level": "High"
+},
+{
+  "domain": "Network Security",
+  "skill": "Packet Crafting & Analysis",
+  "tools": ["Wireshark", "Scapy"],
+  "certificate_alignment": ["GCIH"],
+  "lab_category": "Net-Packet",
+  "difficulty": "Intermediate",
+  "estimated_hours": 6,
+  "priority_level": "Medium"
+},
+{
+  "domain": "DFIR",
+  "skill": "Disk Forensics",
+  "tools": ["Autopsy", "FTK Imager"],
+  "certificate_alignment": ["GCFE"],
+  "lab_category": "DFIR-Disk",
+  "difficulty": "Intermediate",
+  "estimated_hours": 10,
+  "priority_level": "High"
+},
+{
+  "domain": "DFIR",
+  "skill": "Memory Forensics",
+  "tools": ["Volatility"],
+  "certificate_alignment": ["GCFA"],
+  "lab_category": "DFIR-Memory",
+  "difficulty": "Advanced",
+  "estimated_hours": 10,
+  "priority_level": "High"
+},
+{
+  "domain": "DFIR",
+  "skill": "Timeline Analysis",
+  "tools": ["Autopsy", "Plaso"],
+  "certificate_alignment": ["GCFA"],
+  "lab_category": "DFIR-Timeline",
+  "difficulty": "Advanced",
+  "estimated_hours": 8,
+  "priority_level": "Medium"
+},
+{
+  "domain": "DFIR",
+  "skill": "Windows Artifact Analysis",
+  "tools": ["Registry Explorer"],
+  "certificate_alignment": ["GCFE"],
+  "lab_category": "DFIR-Windows",
+  "difficulty": "Intermediate",
+  "estimated_hours": 8,
+  "priority_level": "High"
+},
+{
+  "domain": "DFIR",
+  "skill": "Chain of Custody / Evidence Handling",
+  "tools": [],
+  "certificate_alignment": ["GCFA"],
+  "lab_category": "DFIR-Process",
+  "difficulty": "Beginner",
+  "estimated_hours": 2,
+  "priority_level": "Medium"
+},
+{
+  "domain": "DFIR",
+  "skill": "File System Forensics (NTFS/FAT)",
+  "tools": ["Autopsy"],
+  "certificate_alignment": ["GCFE"],
+  "lab_category": "DFIR-Filesystem",
+  "difficulty": "Intermediate",
+  "estimated_hours": 6,
+  "priority_level": "Medium"
+},
+{
+  "domain": "DFIR",
+  "skill": "Incident Reporting",
+  "tools": [],
+  "certificate_alignment": ["GCIH"],
+  "lab_category": "DFIR-Reporting",
+  "difficulty": "Beginner",
+  "estimated_hours": 3,
+  "priority_level": "Medium"
+},
+{
+  "domain": "SOC / SIEM",
+  "skill": "Log Analysis & Correlation",
+  "tools": ["Splunk", "Elastic"],
+  "certificate_alignment": ["CySA+"],
+  "lab_category": "SOC-Logs",
+  "difficulty": "Beginner",
+  "estimated_hours": 6,
+  "priority_level": "High"
+},
+{
+  "domain": "SOC / SIEM",
+  "skill": "SIEM Query Writing (SPL/KQL)",
+  "tools": ["Splunk", "Microsoft Sentinel"],
+  "certificate_alignment": ["SC-200"],
+  "lab_category": "SOC-Query",
+  "difficulty": "Intermediate",
+  "estimated_hours": 8,
+  "priority_level": "High"
+},
+{
+  "domain": "SOC / SIEM",
+  "skill": "Alert Triage",
+  "tools": [],
+  "certificate_alignment": ["CySA+", "BTL1"],
+  "lab_category": "SOC-Triage",
+  "difficulty": "Beginner",
+  "estimated_hours": 4,
+  "priority_level": "High"
+},
+{
+  "domain": "SOC / SIEM",
+  "skill": "Detection Engineering (Sigma)",
+  "tools": ["Sigma"],
+  "certificate_alignment": ["BTL1"],
+  "lab_category": "SOC-Detection",
+  "difficulty": "Advanced",
+  "estimated_hours": 8,
+  "priority_level": "Medium"
+},
+{
+  "domain": "SOC / SIEM",
+  "skill": "Endpoint Monitoring",
+  "tools": ["Sysmon"],
+  "certificate_alignment": ["BTL1"],
+  "lab_category": "SOC-Endpoint",
+  "difficulty": "Intermediate",
+  "estimated_hours": 5,
+  "priority_level": "Medium"
+},
+{
+  "domain": "SOC / SIEM",
+  "skill": "Incident Escalation Workflow",
+  "tools": [],
+  "certificate_alignment": ["CySA+"],
+  "lab_category": "SOC-Process",
+  "difficulty": "Beginner",
+  "estimated_hours": 3,
+  "priority_level": "Low"
+},
+{
+  "domain": "SOC / SIEM",
+  "skill": "Dashboard & Visualization Building",
+  "tools": ["Splunk", "Kibana"],
+  "certificate_alignment": ["Splunk Core User"],
+  "lab_category": "SOC-Dashboard",
+  "difficulty": "Intermediate",
+  "estimated_hours": 6,
+  "priority_level": "Medium"
+},
+{
+  "domain": "Threat Hunting",
+  "skill": "Hypothesis-Driven Hunting",
+  "tools": [],
+  "certificate_alignment": ["GCTI"],
+  "lab_category": "Hunt-Method",
+  "difficulty": "Advanced",
+  "estimated_hours": 10,
+  "priority_level": "High"
+},
+{
+  "domain": "Threat Hunting",
+  "skill": "MITRE ATT&CK Mapping",
+  "tools": ["ATT&CK Navigator"],
+  "certificate_alignment": ["Detection Engineering"],
+  "lab_category": "Hunt-ATTACK",
+  "difficulty": "Intermediate",
+  "estimated_hours": 6,
+  "priority_level": "High"
+},
+{
+  "domain": "Threat Hunting",
+  "skill": "Threat Intelligence Analysis",
+  "tools": [],
+  "certificate_alignment": ["GCTI", "CTIA"],
+  "lab_category": "Hunt-CTI",
+  "difficulty": "Intermediate",
+  "estimated_hours": 8,
+  "priority_level": "Medium"
+},
+{
+  "domain": "Threat Hunting",
+  "skill": "Anomaly Detection",
+  "tools": ["Splunk", "Jupyter"],
+  "certificate_alignment": [],
+  "lab_category": "Hunt-Anomaly",
+  "difficulty": "Advanced",
+  "estimated_hours": 8,
+  "priority_level": "Medium"
+},
+{
+  "domain": "Threat Hunting",
+  "skill": "IOC Development",
+  "tools": [],
+  "certificate_alignment": ["GCTI"],
+  "lab_category": "Hunt-IOC",
+  "difficulty": "Intermediate",
+  "estimated_hours": 5,
+  "priority_level": "Medium"
+},
+{
+  "domain": "Threat Hunting",
+  "skill": "Behavioral Analytics",
+  "tools": ["Elastic", "Jupyter"],
+  "certificate_alignment": [],
+  "lab_category": "Hunt-Behavior",
+  "difficulty": "Advanced",
+  "estimated_hours": 8,
+  "priority_level": "Low"
+},
+{
+  "domain": "Threat Hunting",
+  "skill": "Adversary Emulation",
+  "tools": ["Velociraptor"],
+  "certificate_alignment": ["Detection Engineering"],
+  "lab_category": "Hunt-Emulation",
+  "difficulty": "Advanced",
+  "estimated_hours": 10,
+  "priority_level": "Low"
+},
+{
+  "domain": "Malware / Reverse Engineering",
+  "skill": "Static Malware Analysis",
+  "tools": ["PEStudio", "YARA"],
+  "certificate_alignment": ["GREM"],
+  "lab_category": "Malware-Static",
+  "difficulty": "Advanced",
+  "estimated_hours": 10,
+  "priority_level": "High"
+},
+{
+  "domain": "Malware / Reverse Engineering",
+  "skill": "Dynamic Malware Analysis",
+  "tools": ["Cuckoo Sandbox"],
+  "certificate_alignment": ["GREM"],
+  "lab_category": "Malware-Dynamic",
+  "difficulty": "Advanced",
+  "estimated_hours": 10,
+  "priority_level": "High"
+},
+{
+  "domain": "Malware / Reverse Engineering",
+  "skill": "Disassembly / Reverse Engineering",
+  "tools": ["Ghidra", "IDA"],
+  "certificate_alignment": ["GREM"],
+  "lab_category": "Malware-RE",
+  "difficulty": "Advanced",
+  "estimated_hours": 15,
+  "priority_level": "High"
+},
+{
+  "domain": "Malware / Reverse Engineering",
+  "skill": "Debugging",
+  "tools": ["x64dbg"],
+  "certificate_alignment": ["GREM"],
+  "lab_category": "Malware-Debug",
+  "difficulty": "Advanced",
+  "estimated_hours": 10,
+  "priority_level": "Medium"
+},
+{
+  "domain": "Malware / Reverse Engineering",
+  "skill": "YARA Rule Writing",
+  "tools": ["YARA"],
+  "certificate_alignment": ["GREM"],
+  "lab_category": "Malware-YARA",
+  "difficulty": "Intermediate",
+  "estimated_hours": 5,
+  "priority_level": "Medium"
+},
+{
+  "domain": "Malware / Reverse Engineering",
+  "skill": "Unpacking / Deobfuscation",
+  "tools": ["x64dbg", "Ghidra"],
+  "certificate_alignment": ["GREM"],
+  "lab_category": "Malware-Unpack",
+  "difficulty": "Advanced",
+  "estimated_hours": 8,
+  "priority_level": "Low"
+},
+{
+  "domain": "Malware / Reverse Engineering",
+  "skill": "Malware Family Classification",
+  "tools": ["YARA", "VirusTotal"],
+  "certificate_alignment": [],
+  "lab_category": "Malware-Classify",
+  "difficulty": "Intermediate",
+  "estimated_hours": 5,
+  "priority_level": "Low"
+}
+]
