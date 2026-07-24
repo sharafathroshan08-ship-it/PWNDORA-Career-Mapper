@@ -1,0 +1,39 @@
+[
+  {
+    "category": "Programming",
+    "examples": ["Python","C","Bash","PowerShell","Regex","Debugging"],
+    "boosts": ["Malware / Reverse Engineering","SOC / SIEM","Threat Hunting"]
+  },
+  {
+    "category": "Networking",
+    "examples": ["TCP/IP","DNS","HTTP","HTTPS","Wireshark","Nmap","Subnetting"],
+    "boosts": ["Network Security","Web Security","SOC / SIEM"]
+  },
+  {
+    "category": "Data Analysis",
+    "examples": ["Log Analysis","CSV","JSON","Anomaly Detection","Dashboards"],
+    "boosts": ["SOC / SIEM","Threat Hunting"]
+  },
+  {
+    "category": "Systems",
+    "examples": ["Linux","Windows","Windows Internals","Active Directory","Virtualization","Containers"],
+    "boosts": ["DFIR","Network Security","SOC / SIEM"]
+  },
+  {
+    "category": "Web / Software",
+    "examples": ["HTML","CSS","JavaScript","REST API","GraphQL","Authentication","OWASP"],
+    "boosts": ["Web Security"]
+  },
+  {
+    "category": "Professional Workflow",
+    "examples": ["Git","Documentation","Reporting","Teamwork"],
+    "boosts": [
+      "Web Security",
+      "Network Security",
+      "DFIR",
+      "SOC / SIEM",
+      "Threat Hunting",
+      "Malware / Reverse Engineering"
+    ]
+  }
+]
