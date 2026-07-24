@@ -1,0 +1,33 @@
+{
+    "domain_scores": [
+        {
+            "domain": "Malware / Reverse Engineering",
+            "score": 2.7
+        },
+        {
+            "domain": "Web Security",
+            "score": 0
+        },
+        {
+            "domain": "Network Security",
+            "score": 0
+        },
+        {
+            "domain": "DFIR",
+            "score": 0
+        },
+        {
+            "domain": "SOC / SIEM",
+            "score": 0
+        },
+        {
+            "domain": "Threat Hunting",
+            "score": 0
+        }
+    ],
+    "top_3_domains": [
+        "Malware / Reverse Engineering",
+        "Web Security",
+        "Network Security"
+    ]
+}
