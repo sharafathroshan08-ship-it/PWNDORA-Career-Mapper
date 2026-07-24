@@ -1,12 +1,8 @@
 {
     "domain_scores": [
         {
-            "domain": "Malware / Reverse Engineering",
-            "score": 2.7
-        },
-        {
             "domain": "Web Security",
-            "score": 0
+            "score": 2.7
         },
         {
             "domain": "Network Security",
@@ -23,11 +19,15 @@
         {
             "domain": "Threat Hunting",
             "score": 0
+        },
+        {
+            "domain": "Malware / Reverse Engineering",
+            "score": 0
         }
     ],
     "top_3_domains": [
-        "Malware / Reverse Engineering",
         "Web Security",
-        "Network Security"
+        "Network Security",
+        "DFIR"
     ]
 }

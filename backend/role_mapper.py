@@ -1,64 +1,88 @@
-# backend/role_mapper.py
+import json
 
-ROLE_MAPPING = {
-    "Web Security": [
-        "Penetration Tester",
-        "Application Security Engineer",
-        "Web Security Analyst"
-    ],
 
-    "Network Security": [
-        "Network Security Engineer",
-        "Security Consultant"
-    ],
+ROLE_WEIGHTS = {
 
-    "DFIR": [
-        "Digital Forensics Analyst",
-        "Incident Responder"
-    ],
+    "Penetration Tester": {
+        "Web Security": 1.0,
+        "Network Security": 0.4,
+        "Threat Hunting": 0.2
+    },
 
-    "SOC / SIEM": [
-        "SOC Analyst",
-        "Security Monitoring Engineer"
-    ],
+    "Application Security Engineer": {
+        "Web Security": 1.0,
+        "SOC / SIEM": 0.2
+    },
 
-    "Threat Hunting": [
-        "Threat Hunter",
-        "Detection Engineer"
-    ],
+    "SOC Analyst": {
+        "SOC / SIEM": 1.0,
+        "Threat Hunting": 0.6,
+        "Network Security": 0.4
+    },
 
-    "Malware / Reverse Engineering": [
-        "Malware Analyst",
-        "Reverse Engineer"
-    ]
+    "Threat Hunter": {
+        "Threat Hunting": 1.0,
+        "SOC / SIEM": 0.7,
+        "DFIR": 0.3
+    },
+
+    "DFIR Analyst": {
+        "DFIR": 1.0,
+        "SOC / SIEM": 0.5
+    },
+
+    "Malware Analyst": {
+        "Malware / Reverse Engineering": 1.0,
+        "Threat Hunting": 0.5
+    },
+
+    "Network Security Engineer": {
+        "Network Security": 1.0,
+        "SOC / SIEM": 0.3
+    }
+
 }
 
 
-def recommend_roles(top_domains):
+def load_json(path):
+    with open(path, "r", encoding="utf-8") as file:
+        return json.load(file)
 
-    recommendations = []
 
-    for domain in top_domains:
+def run_role_mapper():
 
-        if domain in ROLE_MAPPING:
+    mapping = load_json("output/mapping_result.json")
 
-            recommendations.extend(ROLE_MAPPING[domain])
+    role_scores = {}
 
-    return recommendations
+    for role, weights in ROLE_WEIGHTS.items():
+
+        score = 0
+
+        for item in mapping["domain_scores"]:
+
+            domain = item["domain"]
+
+            if domain in weights:
+                score += item["score"] * weights[domain]
+
+        role_scores[role] = round(score, 2)
+
+    ranked = sorted(
+        role_scores.items(),
+        key=lambda x: x[1],
+        reverse=True
+    )
+
+    print("=" * 60)
+    print("PWNDORA ROLE FIT ENGINE")
+    print("=" * 60)
+
+    for role, score in ranked:
+        print(f"{role:<35} {score}")
+
+    return ranked
 
 
 if __name__ == "__main__":
-
-    top3 = [
-        "Web Security",
-        "Network Security",
-        "DFIR"
-    ]
-
-    roles = recommend_roles(top3)
-
-    print("\nRecommended Roles")
-    print("-" * 40)
-
-    for role in roles:
-        print(role)
+    run_role_mapper()

@@ -45,12 +45,19 @@ def save_output(result):
     with open("output/parsed_resume.json", "w", encoding="utf-8") as f:
         json.dump(result, f, indent=4)
 
-    print("\n✅ Parsed resume saved to output/parsed_resume.json")
+
+def run_parser(resume_text):
+
+    taxonomy = load_taxonomy("taxonomy/taxonomy.json")
+
+    result = parse_resume(resume_text, taxonomy)
+
+    save_output(result)
+
+    return result
 
 
 if __name__ == "__main__":
-
-    taxonomy = load_taxonomy("taxonomy/taxonomy.json")
 
     print("=" * 60)
     print("Paste Resume Text")
@@ -60,6 +67,7 @@ if __name__ == "__main__":
     lines = []
 
     while True:
+
         line = input()
 
         if line.strip().upper() == "END":
@@ -69,9 +77,7 @@ if __name__ == "__main__":
 
     resume = "\n".join(lines)
 
-    result = parse_resume(resume, taxonomy)
-
-    save_output(result)
+    result = run_parser(resume)
 
     print("\n========== PARSER RESULT ==========\n")
 
@@ -79,12 +85,15 @@ if __name__ == "__main__":
     print("-" * 40)
 
     if result["matched_skills"]:
+
         for skill in result["matched_skills"]:
+
             print(f"Domain      : {skill['domain']}")
             print(f"Skill       : {skill['skill']}")
             print(f"Difficulty  : {skill['difficulty']}")
             print(f"Priority    : {skill['priority']}")
             print("-" * 40)
+
     else:
         print("None")
 
@@ -92,8 +101,10 @@ if __name__ == "__main__":
     print("-" * 40)
 
     if result["matched_tools"]:
+
         for tool in result["matched_tools"]:
             print(tool)
+
     else:
         print("None")
 
@@ -101,7 +112,9 @@ if __name__ == "__main__":
     print("-" * 40)
 
     if result["matched_certificates"]:
+
         for cert in result["matched_certificates"]:
             print(cert)
+
     else:
         print("None")

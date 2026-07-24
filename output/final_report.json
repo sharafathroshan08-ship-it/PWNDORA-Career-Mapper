@@ -1,0 +1,627 @@
+{
+    "parsed_resume": {
+        "matched_skills": [
+            {
+                "domain": "Web Security",
+                "skill": "SQL Injection",
+                "difficulty": "Beginner",
+                "priority": "High"
+            }
+        ],
+        "matched_tools": [
+            "Burp Suite",
+            "sqlmap"
+        ],
+        "matched_certificates": [
+            "OSWE",
+            "PenTest+",
+            "eJPT"
+        ]
+    },
+    "mapping_result": {
+        "domain_scores": [
+            {
+                "domain": "Web Security",
+                "score": 2.7
+            },
+            {
+                "domain": "Network Security",
+                "score": 0
+            },
+            {
+                "domain": "DFIR",
+                "score": 0
+            },
+            {
+                "domain": "SOC / SIEM",
+                "score": 0
+            },
+            {
+                "domain": "Threat Hunting",
+                "score": 0
+            },
+            {
+                "domain": "Malware / Reverse Engineering",
+                "score": 0
+            }
+        ],
+        "top_3_domains": [
+            "Web Security",
+            "Network Security",
+            "DFIR"
+        ]
+    },
+    "recommended_roles": [
+        [
+            "Penetration Tester",
+            2.7
+        ],
+        [
+            "Application Security Engineer",
+            2.7
+        ],
+        [
+            "SOC Analyst",
+            0.0
+        ],
+        [
+            "Threat Hunter",
+            0.0
+        ],
+        [
+            "DFIR Analyst",
+            0.0
+        ],
+        [
+            "Malware Analyst",
+            0.0
+        ],
+        [
+            "Network Security Engineer",
+            0.0
+        ]
+    ],
+    "gap_analysis": [
+        {
+            "domain": "Web Security",
+            "skill": "Cross-Site Scripting (XSS)",
+            "difficulty": "Beginner",
+            "priority": "High"
+        },
+        {
+            "domain": "Web Security",
+            "skill": "Auth & Session Attacks",
+            "difficulty": "Intermediate",
+            "priority": "High"
+        },
+        {
+            "domain": "Web Security",
+            "skill": "API Security (REST/GraphQL)",
+            "difficulty": "Intermediate",
+            "priority": "Medium"
+        },
+        {
+            "domain": "Web Security",
+            "skill": "SSRF / File Inclusion",
+            "difficulty": "Intermediate",
+            "priority": "Medium"
+        },
+        {
+            "domain": "Web Security",
+            "skill": "Web Recon & Enumeration",
+            "difficulty": "Beginner",
+            "priority": "High"
+        },
+        {
+            "domain": "Web Security",
+            "skill": "OWASP Top 10 Fundamentals",
+            "difficulty": "Beginner",
+            "priority": "High"
+        },
+        {
+            "domain": "Network Security",
+            "skill": "TCP/IP & Protocol Analysis",
+            "difficulty": "Beginner",
+            "priority": "High"
+        },
+        {
+            "domain": "Network Security",
+            "skill": "Port & Service Enumeration",
+            "difficulty": "Beginner",
+            "priority": "High"
+        },
+        {
+            "domain": "Network Security",
+            "skill": "Firewall / IDS-IPS Evasion",
+            "difficulty": "Advanced",
+            "priority": "Medium"
+        },
+        {
+            "domain": "Network Security",
+            "skill": "VPN & Segmentation Concepts",
+            "difficulty": "Intermediate",
+            "priority": "Low"
+        },
+        {
+            "domain": "Network Security",
+            "skill": "Wireless Security",
+            "difficulty": "Intermediate",
+            "priority": "Medium"
+        },
+        {
+            "domain": "Network Security",
+            "skill": "Network Exploitation",
+            "difficulty": "Advanced",
+            "priority": "High"
+        },
+        {
+            "domain": "Network Security",
+            "skill": "Packet Crafting & Analysis",
+            "difficulty": "Intermediate",
+            "priority": "Medium"
+        },
+        {
+            "domain": "DFIR",
+            "skill": "Disk Forensics",
+            "difficulty": "Intermediate",
+            "priority": "High"
+        },
+        {
+            "domain": "DFIR",
+            "skill": "Memory Forensics",
+            "difficulty": "Advanced",
+            "priority": "High"
+        },
+        {
+            "domain": "DFIR",
+            "skill": "Timeline Analysis",
+            "difficulty": "Advanced",
+            "priority": "Medium"
+        },
+        {
+            "domain": "DFIR",
+            "skill": "Windows Artifact Analysis",
+            "difficulty": "Intermediate",
+            "priority": "High"
+        },
+        {
+            "domain": "DFIR",
+            "skill": "Chain of Custody / Evidence Handling",
+            "difficulty": "Beginner",
+            "priority": "Medium"
+        },
+        {
+            "domain": "DFIR",
+            "skill": "File System Forensics (NTFS/FAT)",
+            "difficulty": "Intermediate",
+            "priority": "Medium"
+        },
+        {
+            "domain": "DFIR",
+            "skill": "Incident Reporting",
+            "difficulty": "Beginner",
+            "priority": "Medium"
+        },
+        {
+            "domain": "SOC / SIEM",
+            "skill": "Log Analysis & Correlation",
+            "difficulty": "Beginner",
+            "priority": "High"
+        },
+        {
+            "domain": "SOC / SIEM",
+            "skill": "SIEM Query Writing (SPL/KQL)",
+            "difficulty": "Intermediate",
+            "priority": "High"
+        },
+        {
+            "domain": "SOC / SIEM",
+            "skill": "Alert Triage",
+            "difficulty": "Beginner",
+            "priority": "High"
+        },
+        {
+            "domain": "SOC / SIEM",
+            "skill": "Detection Engineering (Sigma)",
+            "difficulty": "Advanced",
+            "priority": "Medium"
+        },
+        {
+            "domain": "SOC / SIEM",
+            "skill": "Endpoint Monitoring",
+            "difficulty": "Intermediate",
+            "priority": "Medium"
+        },
+        {
+            "domain": "SOC / SIEM",
+            "skill": "Incident Escalation Workflow",
+            "difficulty": "Beginner",
+            "priority": "Low"
+        },
+        {
+            "domain": "SOC / SIEM",
+            "skill": "Dashboard & Visualization Building",
+            "difficulty": "Intermediate",
+            "priority": "Medium"
+        },
+        {
+            "domain": "Threat Hunting",
+            "skill": "Hypothesis-Driven Hunting",
+            "difficulty": "Advanced",
+            "priority": "High"
+        },
+        {
+            "domain": "Threat Hunting",
+            "skill": "MITRE ATT&CK Mapping",
+            "difficulty": "Intermediate",
+            "priority": "High"
+        },
+        {
+            "domain": "Threat Hunting",
+            "skill": "Threat Intelligence Analysis",
+            "difficulty": "Intermediate",
+            "priority": "Medium"
+        },
+        {
+            "domain": "Threat Hunting",
+            "skill": "Anomaly Detection",
+            "difficulty": "Advanced",
+            "priority": "Medium"
+        },
+        {
+            "domain": "Threat Hunting",
+            "skill": "IOC Development",
+            "difficulty": "Intermediate",
+            "priority": "Medium"
+        },
+        {
+            "domain": "Threat Hunting",
+            "skill": "Behavioral Analytics",
+            "difficulty": "Advanced",
+            "priority": "Low"
+        },
+        {
+            "domain": "Threat Hunting",
+            "skill": "Adversary Emulation",
+            "difficulty": "Advanced",
+            "priority": "Low"
+        },
+        {
+            "domain": "Malware / Reverse Engineering",
+            "skill": "Static Malware Analysis",
+            "difficulty": "Advanced",
+            "priority": "High"
+        },
+        {
+            "domain": "Malware / Reverse Engineering",
+            "skill": "Dynamic Malware Analysis",
+            "difficulty": "Advanced",
+            "priority": "High"
+        },
+        {
+            "domain": "Malware / Reverse Engineering",
+            "skill": "Disassembly / Reverse Engineering",
+            "difficulty": "Advanced",
+            "priority": "High"
+        },
+        {
+            "domain": "Malware / Reverse Engineering",
+            "skill": "Debugging",
+            "difficulty": "Advanced",
+            "priority": "Medium"
+        },
+        {
+            "domain": "Malware / Reverse Engineering",
+            "skill": "YARA Rule Writing",
+            "difficulty": "Intermediate",
+            "priority": "Medium"
+        },
+        {
+            "domain": "Malware / Reverse Engineering",
+            "skill": "Unpacking / Deobfuscation",
+            "difficulty": "Advanced",
+            "priority": "Low"
+        },
+        {
+            "domain": "Malware / Reverse Engineering",
+            "skill": "Malware Family Classification",
+            "difficulty": "Intermediate",
+            "priority": "Low"
+        }
+    ],
+    "learning_path": {
+        "foundation": [
+            {
+                "lab_category": "Web-Injection",
+                "skill": "Cross-Site Scripting (XSS)",
+                "hours": 4,
+                "difficulty": "Beginner",
+                "priority": "High"
+            },
+            {
+                "lab_category": "Web-Recon",
+                "skill": "Web Recon & Enumeration",
+                "hours": 3,
+                "difficulty": "Beginner",
+                "priority": "High"
+            },
+            {
+                "lab_category": "Web-Fundamentals",
+                "skill": "OWASP Top 10 Fundamentals",
+                "hours": 5,
+                "difficulty": "Beginner",
+                "priority": "High"
+            },
+            {
+                "lab_category": "Net-Fundamentals",
+                "skill": "TCP/IP & Protocol Analysis",
+                "hours": 6,
+                "difficulty": "Beginner",
+                "priority": "High"
+            },
+            {
+                "lab_category": "Net-Recon",
+                "skill": "Port & Service Enumeration",
+                "hours": 4,
+                "difficulty": "Beginner",
+                "priority": "High"
+            },
+            {
+                "lab_category": "DFIR-Process",
+                "skill": "Chain of Custody / Evidence Handling",
+                "hours": 2,
+                "difficulty": "Beginner",
+                "priority": "Medium"
+            },
+            {
+                "lab_category": "DFIR-Reporting",
+                "skill": "Incident Reporting",
+                "hours": 3,
+                "difficulty": "Beginner",
+                "priority": "Medium"
+            },
+            {
+                "lab_category": "SOC-Logs",
+                "skill": "Log Analysis & Correlation",
+                "hours": 6,
+                "difficulty": "Beginner",
+                "priority": "High"
+            },
+            {
+                "lab_category": "SOC-Triage",
+                "skill": "Alert Triage",
+                "hours": 4,
+                "difficulty": "Beginner",
+                "priority": "High"
+            },
+            {
+                "lab_category": "SOC-Process",
+                "skill": "Incident Escalation Workflow",
+                "hours": 3,
+                "difficulty": "Beginner",
+                "priority": "Low"
+            }
+        ],
+        "primary": [
+            {
+                "lab_category": "Web-AuthN",
+                "skill": "Auth & Session Attacks",
+                "hours": 8,
+                "difficulty": "Intermediate",
+                "priority": "High"
+            },
+            {
+                "lab_category": "Web-API",
+                "skill": "API Security (REST/GraphQL)",
+                "hours": 6,
+                "difficulty": "Intermediate",
+                "priority": "Medium"
+            },
+            {
+                "lab_category": "Web-SSRF",
+                "skill": "SSRF / File Inclusion",
+                "hours": 5,
+                "difficulty": "Intermediate",
+                "priority": "Medium"
+            },
+            {
+                "lab_category": "Net-Fundamentals",
+                "skill": "VPN & Segmentation Concepts",
+                "hours": 4,
+                "difficulty": "Intermediate",
+                "priority": "Low"
+            },
+            {
+                "lab_category": "Net-Wireless",
+                "skill": "Wireless Security",
+                "hours": 6,
+                "difficulty": "Intermediate",
+                "priority": "Medium"
+            },
+            {
+                "lab_category": "Net-Packet",
+                "skill": "Packet Crafting & Analysis",
+                "hours": 6,
+                "difficulty": "Intermediate",
+                "priority": "Medium"
+            },
+            {
+                "lab_category": "DFIR-Disk",
+                "skill": "Disk Forensics",
+                "hours": 10,
+                "difficulty": "Intermediate",
+                "priority": "High"
+            },
+            {
+                "lab_category": "DFIR-Windows",
+                "skill": "Windows Artifact Analysis",
+                "hours": 8,
+                "difficulty": "Intermediate",
+                "priority": "High"
+            },
+            {
+                "lab_category": "DFIR-Filesystem",
+                "skill": "File System Forensics (NTFS/FAT)",
+                "hours": 6,
+                "difficulty": "Intermediate",
+                "priority": "Medium"
+            },
+            {
+                "lab_category": "SOC-Query",
+                "skill": "SIEM Query Writing (SPL/KQL)",
+                "hours": 8,
+                "difficulty": "Intermediate",
+                "priority": "High"
+            },
+            {
+                "lab_category": "SOC-Endpoint",
+                "skill": "Endpoint Monitoring",
+                "hours": 5,
+                "difficulty": "Intermediate",
+                "priority": "Medium"
+            },
+            {
+                "lab_category": "SOC-Dashboard",
+                "skill": "Dashboard & Visualization Building",
+                "hours": 6,
+                "difficulty": "Intermediate",
+                "priority": "Medium"
+            },
+            {
+                "lab_category": "Hunt-ATTACK",
+                "skill": "MITRE ATT&CK Mapping",
+                "hours": 6,
+                "difficulty": "Intermediate",
+                "priority": "High"
+            },
+            {
+                "lab_category": "Hunt-CTI",
+                "skill": "Threat Intelligence Analysis",
+                "hours": 8,
+                "difficulty": "Intermediate",
+                "priority": "Medium"
+            },
+            {
+                "lab_category": "Hunt-IOC",
+                "skill": "IOC Development",
+                "hours": 5,
+                "difficulty": "Intermediate",
+                "priority": "Medium"
+            },
+            {
+                "lab_category": "Malware-YARA",
+                "skill": "YARA Rule Writing",
+                "hours": 5,
+                "difficulty": "Intermediate",
+                "priority": "Medium"
+            },
+            {
+                "lab_category": "Malware-Classify",
+                "skill": "Malware Family Classification",
+                "hours": 5,
+                "difficulty": "Intermediate",
+                "priority": "Low"
+            }
+        ],
+        "stretch": [
+            {
+                "lab_category": "Net-Evasion",
+                "skill": "Firewall / IDS-IPS Evasion",
+                "hours": 8,
+                "difficulty": "Advanced",
+                "priority": "Medium"
+            },
+            {
+                "lab_category": "Net-Exploitation",
+                "skill": "Network Exploitation",
+                "hours": 10,
+                "difficulty": "Advanced",
+                "priority": "High"
+            },
+            {
+                "lab_category": "DFIR-Memory",
+                "skill": "Memory Forensics",
+                "hours": 10,
+                "difficulty": "Advanced",
+                "priority": "High"
+            },
+            {
+                "lab_category": "DFIR-Timeline",
+                "skill": "Timeline Analysis",
+                "hours": 8,
+                "difficulty": "Advanced",
+                "priority": "Medium"
+            },
+            {
+                "lab_category": "SOC-Detection",
+                "skill": "Detection Engineering (Sigma)",
+                "hours": 8,
+                "difficulty": "Advanced",
+                "priority": "Medium"
+            },
+            {
+                "lab_category": "Hunt-Method",
+                "skill": "Hypothesis-Driven Hunting",
+                "hours": 10,
+                "difficulty": "Advanced",
+                "priority": "High"
+            },
+            {
+                "lab_category": "Hunt-Anomaly",
+                "skill": "Anomaly Detection",
+                "hours": 8,
+                "difficulty": "Advanced",
+                "priority": "Medium"
+            },
+            {
+                "lab_category": "Hunt-Behavior",
+                "skill": "Behavioral Analytics",
+                "hours": 8,
+                "difficulty": "Advanced",
+                "priority": "Low"
+            },
+            {
+                "lab_category": "Hunt-Emulation",
+                "skill": "Adversary Emulation",
+                "hours": 10,
+                "difficulty": "Advanced",
+                "priority": "Low"
+            },
+            {
+                "lab_category": "Malware-Static",
+                "skill": "Static Malware Analysis",
+                "hours": 10,
+                "difficulty": "Advanced",
+                "priority": "High"
+            },
+            {
+                "lab_category": "Malware-Dynamic",
+                "skill": "Dynamic Malware Analysis",
+                "hours": 10,
+                "difficulty": "Advanced",
+                "priority": "High"
+            },
+            {
+                "lab_category": "Malware-RE",
+                "skill": "Disassembly / Reverse Engineering",
+                "hours": 15,
+                "difficulty": "Advanced",
+                "priority": "High"
+            },
+            {
+                "lab_category": "Malware-Debug",
+                "skill": "Debugging",
+                "hours": 10,
+                "difficulty": "Advanced",
+                "priority": "Medium"
+            },
+            {
+                "lab_category": "Malware-Unpack",
+                "skill": "Unpacking / Deobfuscation",
+                "hours": 8,
+                "difficulty": "Advanced",
+                "priority": "Low"
+            }
+        ]
+    }
+}
