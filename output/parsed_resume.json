@@ -1,19 +1,5 @@
 {
-    "matched_skills": [
-        {
-            "domain": "Web Security",
-            "skill": "SQL Injection",
-            "difficulty": "Beginner",
-            "priority": "High"
-        }
-    ],
-    "matched_tools": [
-        "Burp Suite",
-        "sqlmap"
-    ],
-    "matched_certificates": [
-        "OSWE",
-        "PenTest+",
-        "eJPT"
-    ]
+    "matched_skills": [],
+    "matched_tools": [],
+    "matched_certificates": []
 }

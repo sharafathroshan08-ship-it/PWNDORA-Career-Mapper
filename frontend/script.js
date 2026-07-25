@@ -252,15 +252,7 @@ sidebarItems.forEach(item=>{
 // MAIN DASHBOARD
 // ---------------------------
 
-function loadDashboard(data){
 
-    loadAnalytics(data.analytics);
-
-    loadAISummary(data.ai_summary);
-
-    loadResumeOverview(data.parsed_resume);
-
-}
 
 // ---------------------------
 // ANALYTICS

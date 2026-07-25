@@ -50,6 +50,10 @@ def analyze_resume():
 
         resume_text = extract_text_from_pdf(temp_file.name)
 
+        print("=" * 60)
+        print(resume_text[:3000])
+        print("=" * 60)
+
         if resume_text.strip() == "":
             return jsonify({
                 "success": False,
