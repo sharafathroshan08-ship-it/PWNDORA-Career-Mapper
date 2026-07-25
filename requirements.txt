@@ -4,3 +4,4 @@ pdfplumber
 gunicorn
 PyMuPDF
 python-docx
+reportlab
