@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>PWNDORA Career Mapper</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<header>
+
+    <h1>PWNDORA</h1>
+
+    <p>
+        AI Powered Cybersecurity Career Mapper
+    </p>
+
+</header>
+
+
+<main>
+
+    <section class="upload-card">
+
+        <h2>Upload Resume</h2>
+
+        <input
+            type="file"
+            id="resume"
+            accept=".pdf"
+        >
+
+        <br><br>
+
+        <button id="analyzeBtn">
+
+            Analyze Resume
+
+        </button>
+
+        <br><br>
+
+        <p id="status">
+
+            Select a PDF and click Analyze Resume.
+
+        </p>
+
+    </section>
+
+
+    <section class="dashboard">
+
+        <div class="card">
+
+            <h2>📊 Domain Scores</h2>
+
+            <div id="domainScores">
+
+            </div>
+
+        </div>
+
+
+        <div class="card">
+
+            <h2>🏆 Recommended Roles</h2>
+
+            <div id="roles">
+
+            </div>
+
+        </div>
+
+
+        <div class="card">
+
+            <h2>⚠ Skill Gap</h2>
+
+            <div id="gap">
+
+            </div>
+
+        </div>
+
+
+        <div class="card">
+
+            <h2>🧪 Learning Path</h2>
+
+            <div id="learning">
+
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<script src="script.js"></script>
+
+</body>
+
+</html>

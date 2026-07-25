@@ -74,15 +74,26 @@ def run_role_mapper():
         reverse=True
     )
 
+    result = []
+
     print("=" * 60)
     print("PWNDORA ROLE FIT ENGINE")
     print("=" * 60)
 
     for role, score in ranked:
+
         print(f"{role:<35} {score}")
 
-    return ranked
+        result.append({
+            "role": role,
+            "score": score
+        })
+
+    return result
 
 
 if __name__ == "__main__":
-    run_role_mapper()
+    result = run_role_mapper()
+
+    print("\nReturned Data:")
+    print(result)

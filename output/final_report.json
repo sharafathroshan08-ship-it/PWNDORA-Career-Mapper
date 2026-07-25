@@ -1,28 +1,14 @@
 {
     "parsed_resume": {
-        "matched_skills": [
-            {
-                "domain": "Web Security",
-                "skill": "SQL Injection",
-                "difficulty": "Beginner",
-                "priority": "High"
-            }
-        ],
-        "matched_tools": [
-            "Burp Suite",
-            "sqlmap"
-        ],
-        "matched_certificates": [
-            "OSWE",
-            "PenTest+",
-            "eJPT"
-        ]
+        "matched_skills": [],
+        "matched_tools": [],
+        "matched_certificates": []
     },
     "mapping_result": {
         "domain_scores": [
             {
                 "domain": "Web Security",
-                "score": 2.7
+                "score": 0
             },
             {
                 "domain": "Network Security",
@@ -52,36 +38,42 @@
         ]
     },
     "recommended_roles": [
-        [
-            "Penetration Tester",
-            2.7
-        ],
-        [
-            "Application Security Engineer",
-            2.7
-        ],
-        [
-            "SOC Analyst",
-            0.0
-        ],
-        [
-            "Threat Hunter",
-            0.0
-        ],
-        [
-            "DFIR Analyst",
-            0.0
-        ],
-        [
-            "Malware Analyst",
-            0.0
-        ],
-        [
-            "Network Security Engineer",
-            0.0
-        ]
+        {
+            "role": "Penetration Tester",
+            "score": 0.0
+        },
+        {
+            "role": "Application Security Engineer",
+            "score": 0.0
+        },
+        {
+            "role": "SOC Analyst",
+            "score": 0.0
+        },
+        {
+            "role": "Threat Hunter",
+            "score": 0.0
+        },
+        {
+            "role": "DFIR Analyst",
+            "score": 0.0
+        },
+        {
+            "role": "Malware Analyst",
+            "score": 0.0
+        },
+        {
+            "role": "Network Security Engineer",
+            "score": 0.0
+        }
     ],
     "gap_analysis": [
+        {
+            "domain": "Web Security",
+            "skill": "SQL Injection",
+            "difficulty": "Beginner",
+            "priority": "High"
+        },
         {
             "domain": "Web Security",
             "skill": "Cross-Site Scripting (XSS)",
@@ -331,6 +323,13 @@
     ],
     "learning_path": {
         "foundation": [
+            {
+                "lab_category": "Web-Injection",
+                "skill": "SQL Injection",
+                "hours": 6,
+                "difficulty": "Beginner",
+                "priority": "High"
+            },
             {
                 "lab_category": "Web-Injection",
                 "skill": "Cross-Site Scripting (XSS)",

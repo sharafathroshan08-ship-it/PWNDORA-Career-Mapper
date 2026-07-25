@@ -5,13 +5,28 @@
             "skill": "SQL Injection",
             "difficulty": "Beginner",
             "priority": "High"
+        },
+        {
+            "domain": "Web Security",
+            "skill": "Cross-Site Scripting (XSS)",
+            "difficulty": "Beginner",
+            "priority": "High"
+        },
+        {
+            "domain": "Network Security",
+            "skill": "TCP/IP & Protocol Analysis",
+            "difficulty": "Beginner",
+            "priority": "High"
         }
     ],
     "matched_tools": [
         "Burp Suite",
+        "Wireshark",
+        "ZAP",
         "sqlmap"
     ],
     "matched_certificates": [
+        "Network+",
         "OSWE",
         "PenTest+",
         "eJPT"

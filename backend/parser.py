@@ -1,5 +1,6 @@
 import json
 import os
+import re
 
 
 def load_taxonomy(file_path):
@@ -7,8 +8,30 @@ def load_taxonomy(file_path):
         return json.load(file)
 
 
+def normalize(text):
+    """
+    Normalize text for better matching.
+    Example:
+    Cross-Site Scripting (XSS)
+    ->
+    cross site scripting xss
+    """
+    text = text.lower()
+
+    text = text.replace("-", " ")
+    text = text.replace("/", " ")
+    text = text.replace("&", " ")
+
+    text = re.sub(r"[^\w\s]", " ", text)
+
+    text = re.sub(r"\s+", " ", text).strip()
+
+    return text
+
+
 def parse_resume(resume_text, taxonomy):
-    resume = resume_text.lower()
+
+    resume = normalize(resume_text)
 
     matched_skills = []
     matched_tools = set()
@@ -16,7 +39,9 @@ def parse_resume(resume_text, taxonomy):
 
     for item in taxonomy:
 
-        if item["skill"].lower() in resume:
+        skill = normalize(item["skill"])
+
+        if skill in resume:
 
             matched_skills.append({
                 "domain": item["domain"],
@@ -25,10 +50,10 @@ def parse_resume(resume_text, taxonomy):
                 "priority": item["priority_level"]
             })
 
-            for tool in item["tools"]:
+            for tool in item.get("tools", []):
                 matched_tools.add(tool)
 
-            for cert in item["certificate_alignment"]:
+            for cert in item.get("certificate_alignment", []):
                 matched_certificates.add(cert)
 
     return {
@@ -42,8 +67,13 @@ def save_output(result):
 
     os.makedirs("output", exist_ok=True)
 
-    with open("output/parsed_resume.json", "w", encoding="utf-8") as f:
-        json.dump(result, f, indent=4)
+    with open(
+        "output/parsed_resume.json",
+        "w",
+        encoding="utf-8"
+    ) as file:
+
+        json.dump(result, file, indent=4)
 
 
 def run_parser(resume_text):
