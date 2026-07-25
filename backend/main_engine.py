@@ -8,7 +8,6 @@ from role_mapper import run_role_mapper
 from gap_analysis import run_gap_analysis
 from learning_path import run_learning_path
 
-
 print("=" * 60)
 print("PWNDORA CAREER MAPPER")
 print("=" * 60)

@@ -3,12 +3,12 @@ from flask_cors import CORS
 import tempfile
 import os
 
-from pdf_reader import extract_text_from_pdf
-from parser import run_parser
-from mapper import run_mapper
-from role_mapper import run_role_mapper
-from gap_analysis import run_gap_analysis
-from learning_path import run_learning_path
+from backend.pdf_reader import extract_text_from_pdf
+from backend.parser import run_parser
+from backend.mapper import run_mapper
+from backend.role_mapper import run_role_mapper
+from backend.gap_analysis import run_gap_analysis
+from backend.learning_path import run_learning_path
 
 app = Flask(__name__)
 
