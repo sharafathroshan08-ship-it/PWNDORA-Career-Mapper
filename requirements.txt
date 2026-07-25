@@ -2,3 +2,5 @@ Flask
 Flask-Cors
 pdfplumber
 gunicorn
+PyMuPDF
+python-docx
