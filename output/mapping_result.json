@@ -2,11 +2,11 @@
     "domain_scores": [
         {
             "domain": "Web Security",
-            "score": 5.4
+            "score": 2.7
         },
         {
             "domain": "Network Security",
-            "score": 2.7
+            "score": 0
         },
         {
             "domain": "DFIR",

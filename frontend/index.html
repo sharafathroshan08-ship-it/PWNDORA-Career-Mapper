@@ -5,99 +5,213 @@
 
     <meta charset="UTF-8">
 
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>PWNDORA Career Mapper</title>
+    <title>PWNDORA AI | Career Intelligence Platform</title>
 
     <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
 </head>
 
 <body>
 
-<header>
+    <!-- ==========================
+            Animated Background
+    =========================== -->
 
-    <h1>PWNDORA</h1>
+    <div class="bg-animation">
 
-    <p>
-        AI Powered Cybersecurity Career Mapper
-    </p>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
 
-</header>
+    </div>
 
+    <!-- ==========================
+            NAVBAR
+    =========================== -->
 
-<main>
+    <nav class="navbar">
 
-    <section class="upload-card">
+        <div class="logo">
 
-        <h2>Upload Resume</h2>
+            <h1>PWNDORA AI</h1>
 
-        <input
-            type="file"
-            id="resume"
-            accept=".pdf"
-        >
+        </div>
 
-        <br><br>
+        <ul class="nav-links">
 
-        <button id="analyzeBtn">
+            <li><a href="#landing">Home</a></li>
 
-            Analyze Resume
+            <li><a href="#upload">Analyze</a></li>
 
-        </button>
+            <li><a href="#dashboard">Dashboard</a></li>
 
-        <br><br>
+        </ul>
 
-        <p id="status">
+    </nav>
 
-            Select a PDF and click Analyze Resume.
+    <!-- ==========================
+            LANDING PAGE
+    =========================== -->
 
-        </p>
+    <section class="landing-page" id="landing">
+
+        <div class="hero">
+
+            <div class="hero-left">
+
+                <div class="badge">
+
+                    AI Powered Cybersecurity Career Intelligence
+
+                </div>
+
+                <h1>
+
+                    Discover Your
+
+                    <span>
+
+                        Cybersecurity
+
+                    </span>
+
+                    Career Path
+
+                </h1>
+
+                <p>
+
+                    Upload your resume and let PWNDORA AI analyze your cybersecurity skills,
+                    recommend domains, identify missing skills,
+                    generate AI insights,
+                    and build your personalized learning roadmap.
+
+                </p>
+
+                <button id="startBtn">
+
+                    Start Analysis →
+
+                </button>
+
+            </div>
+
+            <div class="hero-right">
+
+                <div class="hero-card">
+
+                    <h2>Platform Features</h2>
+
+                    <ul>
+
+                        <li>✓ Resume Skill Extraction</li>
+
+                        <li>✓ 42 Skill Taxonomy</li>
+
+                        <li>✓ Domain Recommendation</li>
+
+                        <li>✓ Role Recommendation</li>
+
+                        <li>✓ Gap Analysis</li>
+
+                        <li>✓ PWNDORA Learning Roadmap</li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+        <!-- ==========================
+            RESUME UPLOAD
+    =========================== -->
+
+    <section class="upload-page" id="upload">
+
+        <div class="upload-box">
+
+            <h2>
+
+                Upload Your Resume
+
+            </h2>
+
+            <p>
+
+                Supported Format : PDF
+
+            </p>
+
+            <input
+                type="file"
+                id="resume"
+                accept=".pdf">
+
+            <button id="uploadBtn">
+
+                Analyze Resume
+
+            </button>
+
+            <p id="status"></p>
+
+        </div>
 
     </section>
 
+    <!-- ==========================
+            AI LOADING SCREEN
+    =========================== -->
 
-    <section class="dashboard">
+    <section
+        class="loading-screen hidden"
+        id="loadingScreen">
 
-        <div class="card">
+        <div class="loader-card">
 
-            <h2>📊 Domain Scores</h2>
+            <h1>
 
-            <div id="domainScores">
+                PWNDORA AI
 
-            </div>
+            </h1>
 
-        </div>
+            <h3 id="loadingTitle">
 
+                Initializing AI...
 
-        <div class="card">
+            </h3>
 
-            <h2>🏆 Recommended Roles</h2>
+            <div class="progress">
 
-            <div id="roles">
-
-            </div>
-
-        </div>
-
-
-        <div class="card">
-
-            <h2>⚠ Skill Gap</h2>
-
-            <div id="gap">
+                <div id="progressBar"></div>
 
             </div>
 
-        </div>
+            <div class="steps">
 
+                <div>✓ Reading Resume</div>
 
-        <div class="card">
+                <div>✓ Extracting Skills</div>
 
-            <h2>🧪 Learning Path</h2>
+                <div>✓ Mapping Domains</div>
 
-            <div id="learning">
+                <div>✓ Finding Best Roles</div>
+
+                <div>✓ Running Gap Analysis</div>
+
+                <div>✓ Building Learning Roadmap</div>
+
+                <div>✓ Preparing Final Report</div>
 
             </div>
 
@@ -105,10 +219,384 @@
 
     </section>
 
-</main>
+    <!-- ==========================
+            DASHBOARD
+    =========================== -->
 
+    <section
+        class="dashboard hidden"
+        id="dashboard">
 
-<script src="script.js"></script>
+        <!-- ==========================
+                SIDEBAR
+        =========================== -->
+
+        <aside class="sidebar">
+
+            <div class="sidebar-logo">
+
+                <h2>PWNDORA</h2>
+
+            </div>
+
+            <ul>
+
+                <li class="active" data-page="home">
+
+                    Dashboard
+
+                </li>
+
+                <li data-page="resume">
+
+                    Resume
+
+                </li>
+
+                <li data-page="domains">
+
+                    Domains
+
+                </li>
+
+                <li data-page="roles">
+
+                    Roles
+
+                </li>
+
+                <li data-page="gaps">
+
+                    Gap Analysis
+
+                </li>
+
+                <li data-page="roadmap">
+
+                    Learning Path
+
+                </li>
+
+                <li data-page="report">
+
+                    Final Report
+
+                </li>
+
+            </ul>
+
+        </aside>
+
+        <!-- ==========================
+                CONTENT
+        =========================== -->
+
+        <main class="content">
+                        <!-- ==========================
+                    DASHBOARD PAGE
+            =========================== -->
+
+            <section id="homePage" class="page active">
+
+                <h1 class="page-title">
+
+                    Career Dashboard
+
+                </h1>
+
+                <div class="stats-grid">
+
+                    <div class="stat-card">
+
+                        <span>Career Readiness</span>
+
+                        <h2 id="careerReadiness">0%</h2>
+
+                    </div>
+
+                    <div class="stat-card">
+
+                        <span>Skill Coverage</span>
+
+                        <h2 id="skillCoverage">0%</h2>
+
+                    </div>
+
+                    <div class="stat-card">
+
+                        <span>Best Domain</span>
+
+                        <h2 id="bestDomain">--</h2>
+
+                    </div>
+
+                    <div class="stat-card">
+
+                        <span>Top Role</span>
+
+                        <h2 id="topRole">--</h2>
+
+                    </div>
+
+                </div>
+
+                <div class="dashboard-grid">
+
+                    <div class="dashboard-card">
+
+                        <h2>AI Summary</h2>
+
+                        <div id="aiSummary">
+
+                            Waiting for AI analysis...
+
+                        </div>
+
+                    </div>
+
+                    <div class="dashboard-card">
+
+                        <h2>Strengths</h2>
+
+                        <ul id="strengthList"></ul>
+
+                    </div>
+
+                    <div class="dashboard-card">
+
+                        <h2>Areas to Improve</h2>
+
+                        <ul id="weaknessList"></ul>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+            <!-- ==========================
+                    RESUME PAGE
+            =========================== -->
+
+            <section id="resumePage" class="page">
+
+                <h1 class="page-title">
+
+                    Resume Analysis
+
+                </h1>
+
+                <div class="dashboard-card">
+
+                    <h2>Resume Overview</h2>
+
+                    <div id="resumeInfo">
+
+                        Waiting for analysis...
+
+                    </div>
+
+                </div>
+
+                <div class="dashboard-grid">
+
+                    <div class="dashboard-card">
+
+                        <h2>Matched Skills</h2>
+
+                        <div id="matchedSkills">
+
+                        </div>
+
+                    </div>
+
+                    <div class="dashboard-card">
+
+                        <h2>Matched Tools</h2>
+
+                        <div id="matchedTools">
+
+                        </div>
+
+                    </div>
+
+                    <div class="dashboard-card">
+
+                        <h2>Matched Certificates</h2>
+
+                        <div id="matchedCertificates">
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+            <!-- ==========================
+                    DOMAIN PAGE
+            =========================== -->
+
+            <section id="domainPage" class="page">
+
+                <h1 class="page-title">
+
+                    Cybersecurity Domains
+
+                </h1>
+
+                <div
+                    id="domainContainer"
+                    class="card-container">
+
+                </div>
+
+            </section>
+
+            <!-- ==========================
+                    ROLE PAGE
+            =========================== -->
+
+            <section id="rolePage" class="page">
+
+                <h1 class="page-title">
+
+                    Recommended Roles
+
+                </h1>
+
+                <div
+                    id="roleContainer"
+                    class="card-container">
+
+                </div>
+
+            </section>
+                        <!-- ==========================
+                    GAP ANALYSIS PAGE
+            =========================== -->
+
+            <section id="gapPage" class="page">
+
+                <h1 class="page-title">
+
+                    Skill Gap Analysis
+
+                </h1>
+
+                <div
+                    id="gapContainer"
+                    class="card-container">
+
+                </div>
+
+            </section>
+
+            <!-- ==========================
+                    LEARNING ROADMAP
+            =========================== -->
+
+            <section id="roadmapPage" class="page">
+
+                <h1 class="page-title">
+
+                    PWNDORA Learning Roadmap
+
+                </h1>
+
+                <div class="dashboard-card">
+
+                    <div
+                        id="roadmapContainer">
+
+                    </div>
+
+                </div>
+
+            </section>
+
+            <!-- ==========================
+                    REPORT PAGE
+            =========================== -->
+
+            <section id="reportPage" class="page">
+
+                <h1 class="page-title">
+
+                    Final AI Report
+
+                </h1>
+
+                <div class="dashboard-card">
+
+                    <h2>
+
+                        Export Your Career Report
+
+                    </h2>
+
+                    <p>
+
+                        Download the complete PWNDORA AI analysis report.
+
+                    </p>
+
+                    <button id="downloadReport">
+
+                        Download Report
+
+                    </button>
+
+                </div>
+
+            </section>
+
+        </main>
+
+    </section>
+
+    <!-- ==========================
+            FOOTER
+    =========================== -->
+
+    <footer>
+
+        <div class="footer-container">
+
+            <h2>
+
+                PWNDORA AI
+
+            </h2>
+
+            <p>
+
+                Cybersecurity Career Intelligence Platform
+
+            </p>
+
+            <p>
+
+                AI Powered Resume Analysis • Domain Mapping • Role Recommendation • Learning Roadmap
+
+            </p>
+
+            <p>
+
+                © 2026 PWNDORA AI. All Rights Reserved.
+
+            </p>
+
+        </div>
+
+    </footer>
+
+    <!-- ==========================
+            JAVASCRIPT
+    =========================== -->
+
+    <script src="script.js"></script>
 
 </body>
 

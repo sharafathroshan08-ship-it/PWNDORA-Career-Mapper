@@ -10,9 +10,12 @@ from backend.role_mapper import run_role_mapper
 from backend.gap_analysis import run_gap_analysis
 from backend.learning_path import run_learning_path
 
-app = Flask(__name__)
+from backend.analytics import generate_dashboard_statistics
+from backend.ai_engine import generate_ai_summary
+from backend.roadmap_engine import generate_learning_roadmap
+from backend.report_generator import generate_final_report
 
-# Allow frontend requests
+app = Flask(__name__)
 CORS(app)
 
 
@@ -20,8 +23,8 @@ CORS(app)
 def home():
     return jsonify({
         "status": "running",
-        "application": "PWNDORA Career Mapper",
-        "version": "1.0"
+        "application": "PWNDORA AI",
+        "version": "2.0"
     })
 
 
@@ -53,6 +56,10 @@ def analyze_resume():
                 "message": "Unable to extract text from PDF."
             }), 400
 
+        # -------------------------
+        # Existing PWNDORA Pipeline
+        # -------------------------
+
         parsed = run_parser(resume_text)
 
         mapping = run_mapper()
@@ -62,6 +69,35 @@ def analyze_resume():
         gaps = run_gap_analysis()
 
         learning = run_learning_path()
+
+        # -------------------------
+        # PWNDORA AI v2
+        # -------------------------
+
+        analytics = generate_dashboard_statistics(
+            mapping,
+            parsed
+        )
+
+        ai_summary = generate_ai_summary(
+            mapping,
+            parsed
+        )
+
+        roadmap = generate_learning_roadmap(
+            gaps
+        )
+
+        report = generate_final_report(
+            parsed_resume=parsed,
+            mapping_result=mapping,
+            recommended_roles=roles,
+            gap_analysis=gaps,
+            learning_path=learning,
+            analytics=analytics,
+            ai_summary=ai_summary,
+            roadmap=roadmap
+        )
 
         return jsonify({
 
@@ -75,7 +111,15 @@ def analyze_resume():
 
             "gap_analysis": gaps,
 
-            "learning_path": learning
+            "learning_path": learning,
+
+            "analytics": analytics,
+
+            "ai_summary": ai_summary,
+
+            "roadmap": roadmap,
+
+            "report": report
 
         })
 
@@ -84,6 +128,7 @@ def analyze_resume():
         return jsonify({
 
             "success": False,
+
             "message": str(e)
 
         }), 500

@@ -1,7 +1,7 @@
 import json
 import os
-from scoring import calculate_score
-from confidence import classify_confidence
+from backend.scoring import calculate_score
+from backend.confidence import classify_confidence
 
 
 def load_json(path):
